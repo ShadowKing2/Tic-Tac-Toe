@@ -1,0 +1,223 @@
+import random
+import string
+from turtle import Turtle
+
+numofmoves1 = 0
+numofmoves2 = 0
+
+moves = 0
+
+game = True
+crush = Turtle()
+
+crush.shape('arrow')
+crush.speed(0)
+
+#above is initializing
+
+crush.forward(100)
+crush.right(180)
+crush.forward(200)
+crush.right(90)
+crush.forward(100)
+crush.right(180)
+crush.forward(200)
+crush.left(90)
+crush.forward(200)
+crush.left(90)
+crush.forward(200)
+crush.left(90)
+crush.forward(200)
+crush.right(90)
+crush.forward(100)
+crush.right(90)
+crush.forward(200)
+crush.right(90)
+crush.forward(100)
+
+crush.up()
+
+crush.goto(0,0)
+
+crush.down()
+
+crush.right(90)
+crush.forward(200)
+crush.right(90)
+crush.forward(200)
+crush.right(90)
+crush.forward(400)
+crush.right(90)
+crush.forward(100)
+crush.right(90)
+crush.forward(400)
+crush.left(90)
+crush.forward(200)
+crush.left(90)
+crush.forward(100)
+
+crush.forward(200)
+crush.left(90)
+crush.forward(200)
+crush.right(90)
+crush.forward(100)
+crush.right(90)
+crush.forward(200)
+crush.right(90)
+crush.forward(100)
+crush.right(90)
+crush.forward(100)
+crush.right(90)
+crush.forward(100)
+
+crush.up()
+crush.goto(0,0)
+
+#drawing the game board
+
+
+
+while moves < 6:
+  choice = int(input("What is your square number ** For the FIRST PLAYER (CIRCLE), starting from one to nine. One is the top left corner, two is the one to the right, and so on. #4 is the left middle. "))
+
+
+  if choice == 1:
+    crush.goto(-150,150)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+
+  if choice == 2:
+    crush.goto(0,150)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+
+  if choice == 3:
+    crush.goto(150,150)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+
+  if choice == 4:
+    crush.goto(-150,50)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+
+  if choice == 5:
+    crush.goto(50,50)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+
+  if choice == 6:
+    crush.goto(150,50)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+
+  if choice == 7:
+    crush.goto(-150,-50)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+
+  if choice == 8:
+    crush.goto(0,-50)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+
+  if choice == 9:
+    crush.goto(130,-50)
+    crush.down()
+    crush.circle(20)
+    moves = moves + 1
+    crush.up()
+  
+  choice1 = int(input("What is your square number ** For the SECOND PLAYER (stamp), starting from one to nine. One is the top left corner, two is the one to the right, and so on. #4 is the left middle. "))
+
+  if choice1 == 1:
+    crush.goto(-150,150)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+  if choice1 == 2:
+    crush.goto(0,150)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+  if choice1 == 3:
+    crush.goto(150,150)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+  if choice1 == 4:
+    crush.goto(-150,50)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+  if choice1 == 5:
+    crush.goto(50,50)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+  if choice1 == 6:
+    crush.goto(150,50)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+  if choice1 == 7:
+    crush.goto(-150,-50)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+  if choice1 == 8:
+    crush.goto(0,-50)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+  if choice1 == 9:
+    crush.goto(130,-50)
+    crush.down()
+    crush.stamp()
+    moves = moves + 1
+    crush.up()
+
+print("GOOD JOB, YOUR GAME IS OVER!!!!")
+
+
+#works better on repl, works on int
+
+
+
+#extra notes on bottom on things I might want to learn
+
+#event_handler
+#pigame
+
